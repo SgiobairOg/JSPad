@@ -1,9 +1,9 @@
-String.prototype.padEnd = function ( len, pad=' ' ) {
+String.prototype.padEnd = function ( len, pad='\x20' ) {
   //Pads the string object with the given character to the target length
   return this.length < len ? ( this + pad ).padEnd( len, pad ) : this 
 }
 
-String.prototype.padStart = function ( len, pad=' ' ) {
+String.prototype.padStart = function ( len, pad='\x20' ) {
   //Pads the string object with the given character to the target length
   return this.length < len ? ( pad + this ).padStart( len, pad ) : this 
 }
